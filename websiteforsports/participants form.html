@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Registration</title>
+    <link rel="stylesheet" href="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\participants.css"> <!-- Update path as needed -->
+</head>
+<body>
+    <nav>
+        <a href="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\home.html">Home</a>
+        <a href="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\game.html">Games</a>
+        <a href="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\rule.html">Rule Book</a>
+        <a href="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\participants form.html">Participants</a>
+    </nav>
+    
+
+    <header>
+        <h1>Participant Registration</h1>
+    </header>
+
+    <section class="registration-form">
+        <h2>Register for the Event</h2>
+        <form action="C:\Users\DELL\Pictures\divyhanshu\websiteforsports\.vscode\submit-participant.php" method="post">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="basketball">Basketball</option>
+                    <option value="football">Football</option>
+                    <option value="athletics">Athletics</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sports Event. All rights reserved.</p>
+    </footer>
+</body>
+</html>
